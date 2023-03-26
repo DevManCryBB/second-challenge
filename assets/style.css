@@ -2,7 +2,7 @@
 
 }
 
-header, footer {
+header {
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -27,7 +27,7 @@ nav a {
 }
 
 img {
-    width: 200px;
+    width: 100px;
     border-radius: 25px;
 }
 
@@ -35,8 +35,7 @@ img {
     border:2px solid cornflowerblue;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
+    justify-content: space-between;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -49,12 +48,12 @@ img {
     border:2px solid cornflowerblue;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    width: 100%;
+    justify-items: flex-end;
+    align-content: center;
+    width: 50%;
     padding: 0px;
     margin: 0px;
-    float: left;
+    float: inline-end;
     font-style: italic;
     background-color: whitesmoke;
 }
@@ -64,12 +63,15 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: left;
 }
 
-@media screen  and (max-width 768px) {
+footer {
+    display: flex;
+    background-color: cadetblue;
+}
+
+@media screen and (max-width768px) {
     .card {
         width: 100%;
     }
-    
 }
