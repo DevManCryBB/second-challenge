@@ -1,4 +1,8 @@
-header {
+.root {
+
+}
+
+header, footer {
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -7,44 +11,65 @@ header {
 }
 
 header h1 {
-margin-left: 5px;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: 200;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
 }
 
 nav a {
     background-color: rgb(81, 148, 151);
     border-color: black;
     border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 3px;
     margin: 5px 5px;
     border-radius: 25px;
 }
 
 img {
-width: 200px;
-border-radius: 25px;
+    width: 200px;
+    border-radius: 25px;
 }
 
-main {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-main section {
-
-
-}
-
-aside {
+.card { 
+    border:2px solid cornflowerblue;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-content: flex-start;
     width: 100%;
-    padding: 15px;
-    margin: 15px;
+    padding: 0px;
+    margin: 0px;
     float: left;
     font-style: italic;
     background-color: cadetblue;
+}
+
+.secondary {
+    border:2px solid cornflowerblue;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    font-style: italic;
+    background-color: whitesmoke;
+}
+
+main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: left;
+}
+
+@media screen  and (max-width 768px) {
+    .card {
+        width: 100%;
+    }
+    
 }
