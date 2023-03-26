@@ -3,15 +3,17 @@ header {
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    background-color: slategray;
+    background-color: cadetblue;
 }
 
 header h1 {
 margin-left: 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 200;
 }
 
 nav a {
-    background-color: gray;
+    background-color: rgb(81, 148, 151);
     border-color: black;
     border-width: 2px;
     padding: 3px;
@@ -33,4 +35,16 @@ align-items: center;
 main section {
 
 
+}
+
+aside {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+    float: left;
+    font-style: italic;
+    background-color: cadetblue;
 }
