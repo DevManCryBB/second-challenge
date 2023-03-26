@@ -2,6 +2,13 @@
 
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between ;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +41,6 @@ img {
 .card { 
     border:2px solid cornflowerblue;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0px;
@@ -47,22 +53,11 @@ img {
 .secondary {
     border:2px solid cornflowerblue;
     width: 100%;
-    display: flex;
-    justify-items: flex-end;
-    align-content: center;
     width: 50%;
     padding: 0px;
     margin: 0px;
-    float: inline-end;
     font-style: italic;
     background-color: whitesmoke;
-}
-
-main {
-    min-height: 70vh;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 footer {
