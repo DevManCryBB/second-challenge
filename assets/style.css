@@ -1,4 +1,4 @@
-.root {
+:root {
 
 }
 
@@ -6,25 +6,31 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-shrink: inherit;
     align-content: space-between ;
 }
 
-header {
+header, footer {
     display: flex;
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    background-color: cadetblue;
+    background-image: url(./47CF09C7-4269-485E-B957-CF2B6503C967_1_102_o.jpeg);
 }
 
 header h1 {
     margin-left: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    color: lavender;
     font-weight: 200;
+}
+footer h3 {
+    align-content: center;
+    color: lavender;
 }
 
 nav a {
-    background-color: rgb(81, 148, 151);
+    color: lavender;
     border-color: black;
     border-width: 2px;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,31 +44,24 @@ img {
     border-radius: 25px;
 }
 
-.card { 
+.sidebar { 
     border:2px solid cornflowerblue;
-    width: 100%;
+    width: 50%;
     justify-content: space-between;
-    width: 100%;
     padding: 0px;
     margin: 0px;
     float: left;
     font-style: italic;
-    background-color: cadetblue;
+    background-color: lavender;
 }
 
 .secondary {
     border:2px solid cornflowerblue;
-    width: 100%;
     width: 50%;
     padding: 0px;
     margin: 0px;
     font-style: italic;
     background-color: whitesmoke;
-}
-
-footer {
-    display: flex;
-    background-color: cadetblue;
 }
 
 @media screen and (max-width768px) {
